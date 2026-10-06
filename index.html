@@ -172,16 +172,20 @@
                     style="margin-bottom:32px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
                     <div class="overview-feature"
                         style="display:flex; align-items:center; gap:10px; padding:12px 16px; background:var(--white); border-radius:10px; border:1px solid #eee;">
-                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Noise Reduction</div>
+                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Noise Reduction
+                    </div>
                     <div class="overview-feature"
                         style="display:flex; align-items:center; gap:10px; padding:12px 16px; background:var(--white); border-radius:10px; border:1px solid #eee;">
-                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Thermal Insulation</div>
+                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Thermal Insulation
+                    </div>
                     <div class="overview-feature"
                         style="display:flex; align-items:center; gap:10px; padding:12px 16px; background:var(--white); border-radius:10px; border:1px solid #eee;">
-                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Weather Proof</div>
+                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Weather Proof
+                    </div>
                     <div class="overview-feature"
                         style="display:flex; align-items:center; gap:10px; padding:12px 16px; background:var(--white); border-radius:10px; border:1px solid #eee;">
-                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Low Maintenance</div>
+                        <i class="fas fa-check-circle" style="color:var(--primary);"></i> Low Maintenance
+                    </div>
                 </div>
 
                 <a href="upvc.html" class="btn-primary" style="display:inline-flex;">View Collection <i
@@ -203,25 +207,46 @@
 
             <div class="services-grid">
                 <!-- UPVC Card -->
-                <div class="service-card fade-in delay-1" onclick="window.location.href='upvc.html'">
-                    <img src="assets/upvc-casement-window.jpg" alt="UPVC Windows and Doors">
-                    <div class="service-card-overlay">
-                        <h3>uPVC Windows and Doors</h3>
-                        <p>One of the top choices in the industry, our uPVC casement windows are known for noise
-                            reduction, thermal insulation, and low maintenance. Ideal for residential and commercial
-                            spaces.</p>
-                        <a href="upvc.html" class="card-link">Explore Range <i class="fas fa-arrow-right"></i></a>
+                <div class="service-card-wrapper fade-in delay-1" onclick="window.location.href='upvc.html'"
+                    style="cursor:pointer; display:flex; flex-direction:column; gap:24px;">
+                    <div class="service-card">
+                        <img src="assets/upvc-casement-window.jpg" alt="UPVC Windows and Doors">
+                        <div class="service-card-overlay"
+                            style="background:linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 50%); padding:20px;">
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Outfit',sans-serif; font-size:1.6rem; font-weight:800; color:var(--primary); margin-bottom:12px;">
+                            uPVC Collection</h3>
+                        <p style="color:var(--dark); line-height:1.6; margin-bottom:16px;">One of the top choices in the
+                            industry, our uPVC casement windows are known for noise reduction, thermal insulation, and
+                            low maintenance.</p>
+                        <span
+                            style="color:var(--primary); font-weight:700; text-transform:uppercase; font-size:0.9rem;">Explore
+                            Range <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </div>
 
                 <!-- Aluminium Card -->
-                <div class="service-card fade-in delay-2" onclick="window.location.href='aluminium.html'">
-                    <img src="assets/alu-sliding-window.jpg" alt="Aluminium Windows and Doors">
-                    <div class="service-card-overlay">
-                        <h3>Aluminium Windows and Doors</h3>
-                        <p>Sleek, modern designs with outstanding durability and strength. Lightweight yet robust frames
-                            ensure superior weather resistance and energy efficiency while maximizing natural light.</p>
-                        <a href="aluminium.html" class="card-link">Explore Range <i class="fas fa-arrow-right"></i></a>
+                <div class="service-card-wrapper fade-in delay-2" onclick="window.location.href='aluminium.html'"
+                    style="cursor:pointer; display:flex; flex-direction:column; gap:24px;">
+                    <div class="service-card">
+                        <img src="assets/alu-sliding-window.jpg" alt="Aluminium Windows and Doors">
+                        <div class="service-card-overlay"
+                            style="background:linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 50%); padding:20px;">
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Outfit',sans-serif; font-size:1.6rem; font-weight:800; color:var(--primary); margin-bottom:12px;">
+                            Aluminium Collection</h3>
+                        <p style="color:var(--dark); line-height:1.6; margin-bottom:16px;">Sleek, modern designs with
+                            outstanding durability and strength. Lightweight yet robust frames ensure superior weather
+                            resistance.</p>
+                        <span
+                            style="color:var(--primary); font-weight:700; text-transform:uppercase; font-size:0.9rem;">Explore
+                            Range <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </div>
             </div>

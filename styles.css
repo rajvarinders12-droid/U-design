@@ -305,7 +305,7 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .hero-content {
@@ -572,15 +572,15 @@ button {
 /* WHY CHOOSE US */
 .why-section {
   padding: 100px 20px;
-  background-color: var(--white);
+  background-color: var(--primary);
 }
 
 .why-section .section-title {
-  color: var(--primary);
+  color: var(--white);
 }
 
 .why-section .section-desc {
-  color: var(--dark);
+  color: var(--white);
 }
 
 .why-grid {
@@ -592,8 +592,8 @@ button {
 }
 
 .why-card {
-  background: var(--light);
-  border: 1px solid var(--neutral);
+  background: var(--white);
+  border: 1px solid var(--primary);
   border-radius: 16px;
   padding: 36px 28px;
   text-align: center;
@@ -605,8 +605,7 @@ button {
 .why-card:hover {
   background: var(--white);
   transform: translateY(-8px);
-  border-color: var(--accent);
-  box-shadow: 0 10px 30px var(--shadow);
+  border-color: var(--primary);
 }
 
 .why-card .step-number {
@@ -1166,7 +1165,8 @@ button {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--dark);
-  box-shadow: 0 2px 10px var(--shadow);
+  box-shadow: none;
+  border: 1px solid #eeeeee;
 }
 
 .overview-feature i {
@@ -1191,17 +1191,16 @@ button {
 }
 
 .product-card {
-  background-color: var(--light);
+  background-color: var(--white);
   border-radius: 20px;
   overflow: hidden;
   transition: 0.4s;
-  border: 1px solid transparent;
+  border: 1px solid #eeeeee;
 }
 
 .product-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px var(--shadow-lg);
-  border-color: var(--accent);
+  border-color: var(--primary);
 }
 
 .learn-more {
