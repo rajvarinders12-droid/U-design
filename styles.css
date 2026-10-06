@@ -3,7 +3,7 @@
   --secondary: #FFFFFF;
   --dark: #CC4400;
   --neutral: #FFFFFF;
-  --light: #F9F9F9;
+  --light: #FFFFFF;
   --accent: #E65C00;
   --white: #ffffff;
   --shadow: rgba(255, 112, 0, 0.15);
@@ -666,7 +666,7 @@ button {
 .service-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(15, 43, 36, 0.95) 0%, rgba(15, 43, 36, 0.3) 50%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(204, 68, 0, 0.3) 50%, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
