@@ -2,8 +2,8 @@
   --primary: #FF7000;
   --secondary: #FFFFFF;
   --dark: #CC4400;
-  --neutral: #FFE5D4;
-  --light: #FFF5EE;
+  --neutral: #FFFFFF;
+  --light: #F9F9F9;
   --accent: #E65C00;
   --white: #ffffff;
   --shadow: rgba(255, 112, 0, 0.15);
@@ -72,7 +72,7 @@ button {
 }
 
 .top-bar a {
-  color: var(--accent);
+  color: var(--white);
   transition: 0.3s;
 }
 
@@ -94,7 +94,7 @@ button {
 }
 
 .top-bar-item i {
-  color: var(--accent);
+  color: var(--white);
 }
 
 /* NAVBAR */
@@ -298,15 +298,14 @@ button {
   background-size: cover;
   background-position: center;
   z-index: 0;
-  background-image: url('assets/upvc-sliding-door.jpg');
-  /* Changed image to a window/door related one */
+  background-image: url('assets/main.png');
 }
 
 .hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(15, 43, 36, 0.9) 0%, rgba(29, 31, 33, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .hero-content {
@@ -363,8 +362,8 @@ button {
 }
 
 .btn-primary {
-  background-color: var(--accent);
-  color: var(--dark);
+  background-color: var(--primary);
+  color: var(--white);
   padding: 16px 36px;
   border-radius: 6px;
   font-weight: 700;
@@ -375,19 +374,22 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  border: 2px solid var(--primary);
 }
 
 .btn-primary:hover {
-  background-color: #d4b577;
+  background-color: var(--white);
+  color: var(--primary);
+  border-color: var(--primary);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(201, 169, 106, 0.4);
+  box-shadow: 0 8px 25px var(--shadow-lg);
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: var(--primary);
   color: var(--white);
   padding: 16px 36px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--primary);
   border-radius: 6px;
   font-weight: 600;
   text-transform: uppercase;
@@ -397,8 +399,9 @@ button {
 }
 
 .btn-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  background-color: var(--white);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .hero-stats {
@@ -540,8 +543,9 @@ button {
   width: 48px;
   height: 48px;
   min-width: 48px;
+  border: 2px solid var(--primary);
   background-color: var(--primary);
-  color: var(--accent);
+  color: var(--white);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -788,8 +792,9 @@ button {
 .vision-icon {
   width: 48px;
   height: 48px;
+  border: 2px solid var(--primary);
   background-color: var(--primary);
-  color: var(--accent);
+  color: var(--white);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -853,8 +858,9 @@ button {
   width: 56px;
   height: 56px;
   min-width: 56px;
+  border: 2px solid var(--primary);
   background-color: var(--primary);
-  color: var(--accent);
+  color: var(--white);
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -1193,6 +1199,26 @@ button {
   transform: translateY(-10px);
   box-shadow: 0 20px 50px var(--shadow-lg);
   border-color: var(--accent);
+}
+
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white) !important;
+  background-color: #000000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.learn-more:hover {
+  background-color: #333333;
 }
 
 .product-card-image {
