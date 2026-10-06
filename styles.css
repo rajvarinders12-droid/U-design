@@ -1,13 +1,13 @@
 :root {
   --primary: #FF7000;
   --secondary: #FFFFFF;
-  --dark: #222222;
-  --neutral: #E6E8EA;
-  --light: #FAFAFA;
+  --dark: #CC4400;
+  --neutral: #FFE5D4;
+  --light: #FFF5EE;
   --accent: #E65C00;
   --white: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --shadow-lg: rgba(0, 0, 0, 0.2);
+  --shadow: rgba(255, 112, 0, 0.15);
+  --shadow-lg: rgba(255, 112, 0, 0.25);
 }
 
 /* RESET & BASE */
@@ -80,7 +80,8 @@ button {
   text-decoration: underline;
 }
 
-.top-bar-left, .top-bar-right {
+.top-bar-left,
+.top-bar-right {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -186,7 +187,7 @@ button {
   transition: width 0.3s;
 }
 
-.nav-links a:not(.nav-cta):hover::after, 
+.nav-links a:not(.nav-cta):hover::after,
 .nav-links a.active:not(.nav-cta)::after {
   width: 100%;
 }
@@ -297,7 +298,8 @@ button {
   background-size: cover;
   background-position: center;
   z-index: 0;
-  background-image: url('assets/upvc-sliding-door.jpg'); /* Changed image to a window/door related one */
+  background-image: url('assets/upvc-sliding-door.jpg');
+  /* Changed image to a window/door related one */
 }
 
 .hero-bg::after {
@@ -453,7 +455,7 @@ button {
 
 .section-desc {
   font-size: 1.05rem;
-  color: #666;
+  color: var(--dark);
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.7;
@@ -515,7 +517,7 @@ button {
 }
 
 .about-text p {
-  color: #555;
+  color: var(--dark);
   line-height: 1.8;
   margin-bottom: 20px;
   font-size: 1rem;
@@ -556,22 +558,22 @@ button {
 
 .about-feature-text p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--dark);
   margin: 0;
 }
 
 /* WHY CHOOSE US */
 .why-section {
   padding: 100px 20px;
-  background-color: var(--primary);
+  background-color: var(--white);
 }
 
 .why-section .section-title {
-  color: var(--white);
+  color: var(--primary);
 }
 
 .why-section .section-desc {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--dark);
 }
 
 .why-grid {
@@ -583,29 +585,29 @@ button {
 }
 
 .why-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--light);
+  border: 1px solid var(--neutral);
   border-radius: 16px;
   padding: 36px 28px;
   text-align: center;
   transition: 0.4s;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
 }
 
 .why-card:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--white);
   transform: translateY(-8px);
   border-color: var(--accent);
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 .why-card .step-number {
   font-family: 'Outfit', sans-serif;
   font-size: 3rem;
   font-weight: 900;
-  color: var(--accent);
-  opacity: 0.3;
+  color: var(--primary);
+  opacity: 0.1;
   margin-bottom: 16px;
   line-height: 1;
 }
@@ -613,13 +615,13 @@ button {
 .why-card h3 {
   font-family: 'Outfit', sans-serif;
   font-size: 1.2rem;
-  color: var(--white);
+  color: var(--primary);
   margin-bottom: 12px;
   font-weight: 700;
 }
 
 .why-card p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--dark);
   font-size: 0.9rem;
   line-height: 1.7;
 }
@@ -779,7 +781,7 @@ button {
 }
 
 .vision-card p {
-  color: #555;
+  color: var(--dark);
   line-height: 1.8;
 }
 
@@ -868,7 +870,7 @@ button {
 }
 
 .contact-item p {
-  color: #666;
+  color: var(--dark);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -892,7 +894,7 @@ button {
   font-size: 0.9rem;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
   width: 100%;
   padding: 14px 18px;
@@ -904,7 +906,7 @@ button {
   background-color: var(--light);
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent);
@@ -1133,7 +1135,7 @@ button {
 }
 
 .overview-text p {
-  color: #555;
+  color: var(--dark);
   line-height: 1.8;
   margin-bottom: 16px;
 }
@@ -1227,7 +1229,7 @@ button {
 }
 
 .product-card-content p {
-  color: #666;
+  color: var(--dark);
   font-size: 0.9rem;
   line-height: 1.6;
 }
@@ -1277,12 +1279,29 @@ button {
   transform: scale(1);
 }
 
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
-.delay-4 { transition-delay: 0.4s; }
-.delay-5 { transition-delay: 0.5s; }
-.delay-6 { transition-delay: 0.6s; }
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.delay-5 {
+  transition-delay: 0.5s;
+}
+
+.delay-6 {
+  transition-delay: 0.6s;
+}
 
 /* BACK TO TOP */
 .back-to-top {
@@ -1321,7 +1340,7 @@ button {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 112, 0, 0.5);
   z-index: 998;
 }
 
@@ -1334,27 +1353,35 @@ button {
   .why-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .about-container {
     grid-template-columns: 1fr;
   }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .stats-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .vision-container {
     grid-template-columns: 1fr;
   }
+
   .contact-container {
     grid-template-columns: 1fr;
   }
+
   .overview-container {
     grid-template-columns: 1fr;
   }
@@ -1364,9 +1391,11 @@ button {
   .top-bar {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -1378,21 +1407,25 @@ button {
     flex-direction: column;
     padding: 80px 40px 40px;
     gap: 24px;
-    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 0 30px rgba(255, 112, 0, 0.1);
     transition: right 0.4s;
     z-index: 999;
     align-items: flex-start;
   }
+
   .nav-links.active {
     right: 0;
   }
+
   .nav-links a {
     font-size: 1.1rem;
   }
+
   .nav-cta {
     width: 100%;
     text-align: center;
   }
+
   .dropdown-menu {
     position: static;
     opacity: 1;
@@ -1403,28 +1436,33 @@ button {
     padding: 10px 0 0 15px;
     display: none;
   }
+
   .dropdown.active .dropdown-menu {
     display: block;
   }
+
   .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
   }
+
   .hamburger.active span:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
   }
-  
+
   .logo img {
     height: 44px;
   }
-  
+
   .hero {
     min-height: 100vh;
     min-height: 100dvh;
     height: auto;
   }
+
   .hero-content {
     padding: 120px 20px 40px;
     justify-content: center;
@@ -1432,31 +1470,38 @@ button {
     min-height: 100dvh;
     box-sizing: border-box;
   }
+
   .hero-badge {
     font-size: 0.7rem;
     padding: 6px 16px;
     letter-spacing: 1.5px;
     margin-bottom: 16px;
   }
+
   .hero h1 {
     font-size: 1.8rem;
     margin-bottom: 14px;
   }
+
   .hero-subtitle {
     font-size: 0.9rem;
     margin-bottom: 20px;
   }
+
   .hero-buttons {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 10px;
   }
-  .btn-primary, .btn-secondary {
+
+  .btn-primary,
+  .btn-secondary {
     width: 100%;
     justify-content: center;
     padding: 14px 28px;
     font-size: 0.85rem;
   }
+
   .hero-stats {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1464,37 +1509,72 @@ button {
     margin-top: 24px;
     justify-content: center;
   }
+
   .hero-stat {
     flex: 0 0 auto;
   }
+
   .stat-number {
     font-size: 1.8rem;
   }
+
   .stat-label {
     font-size: 0.7rem;
   }
-  
-  .why-grid, .product-grid, .footer-container {
+
+  .why-grid,
+  .product-grid,
+  .footer-container {
     grid-template-columns: 1fr;
   }
+
   .stats-container {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .service-card {
     height: 350px;
   }
+
   .service-card h3 {
     font-size: 1.4rem;
   }
+
   .service-card p {
     font-size: 0.85rem;
     line-height: 1.4;
     margin-bottom: 15px;
   }
+
   .service-card-overlay {
     padding: 20px;
   }
+
+  .about-section,
+  .services-section,
+  .why-section,
+  .vision-section,
+  .contact-section,
+  .stats-section,
+  .product-grid-section,
+  .product-overview {
+    padding: 60px 15px;
+  }
+
+  .why-card,
+  .vision-card,
+  .service-card-overlay {
+    padding: 24px;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
   .overview-features {
     grid-template-columns: 1fr;
   }
