@@ -137,6 +137,9 @@ button {
   margin-bottom: 20px;
   object-fit: contain;
   display: block;
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
 .logo-text {
@@ -611,7 +614,7 @@ button {
   font-size: 3rem;
   font-weight: 900;
   color: var(--primary);
-  opacity: 0.1;
+  opacity: 1;
   margin-bottom: 16px;
   line-height: 1;
 }
@@ -1491,6 +1494,10 @@ button {
 
   .hero-bg {
     background-image: url('assets/main-mobile.png');
+  }
+
+  .hero-bg::after {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.6) 100%);
   }
 
   .hero-content {
