@@ -1,13 +1,13 @@
 :root {
-  --primary: #0F2B24;
-  --secondary: #355E3B;
-  --dark: #1D1F21;
+  --primary: #FF7000;
+  --secondary: #FFFFFF;
+  --dark: #222222;
   --neutral: #E6E8EA;
-  --light: #FAFAF7;
-  --accent: #C9A96A;
+  --light: #FAFAFA;
+  --accent: #E65C00;
   --white: #ffffff;
-  --shadow: rgba(15, 43, 36, 0.1);
-  --shadow-lg: rgba(15, 43, 36, 0.2);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-lg: rgba(0, 0, 0, 0.2);
 }
 
 /* RESET & BASE */
