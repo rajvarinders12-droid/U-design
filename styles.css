@@ -340,7 +340,6 @@ button {
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 20px;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 span {
@@ -353,7 +352,6 @@ button {
   max-width: 700px;
   opacity: 1;
   margin-bottom: 36px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.9);
   font-weight: 500;
 }
 
@@ -1368,7 +1366,7 @@ button {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(255, 112, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 998;
 }
 
@@ -1489,6 +1487,10 @@ button {
     min-height: 100vh;
     min-height: 100dvh;
     height: auto;
+  }
+
+  .hero-bg {
+    background-image: url('assets/main-mobile.png');
   }
 
   .hero-content {
