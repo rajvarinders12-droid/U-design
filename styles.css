@@ -340,6 +340,7 @@ button {
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 20px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 span {
@@ -350,8 +351,10 @@ button {
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 700px;
-  opacity: 0.9;
+  opacity: 1;
   margin-bottom: 36px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.9);
+  font-weight: 500;
 }
 
 .hero-buttons {
@@ -946,7 +949,7 @@ button {
 
 /* FOOTER */
 .footer {
-  background-color: var(--dark);
+  background-color: #111111;
   color: rgba(255, 255, 255, 0.7);
   padding: 80px 20px 30px;
 }
