@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | U Design Window World</title>
+    <meta name="description" content="Read the latest news, tips, and trends about UPVC and Aluminium windows and doors from U Design Window World LLP.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .blog-card {
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px var(--shadow-lg);
+        }
+        .blog-image {
+            height: 240px;
+            overflow: hidden;
+        }
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+        }
+        .blog-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .blog-meta i {
+            margin-right: 6px;
+        }
+        .blog-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .blog-excerpt {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+        .read-more {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .blog-card:hover .read-more {
+            color: var(--accent);
+            gap: 12px;
+        }
+        @media (max-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <div class="top-bar-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nagla Burja-Pushpanjali Road, Vrindavan, 281121 Mathura</span>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <div class="top-bar-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+918630730545">+91 8630730545</a>
+                </div>
+                <div class="top-bar-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:udesignwindowworld@gmail.com">udesignwindowworld@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="U Design Window World Logo">
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Products <i class="fas fa-chevron-down" style="font-size:0.7rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="upvc.html">UPVC Windows & Doors</a></li>
+                        <li><a href="aluminium.html">Aluminium Windows & Doors</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get Quote</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('assets/hero-banner.jpg');"></div>
+        <div class="page-hero-content">
+            <h1 class="fade-in">Our <span>Blog</span></h1>
+            <p class="fade-in delay-1">Insights, tips, and trends on premium window and door solutions for your space.</p>
+            <div class="breadcrumb fade-in delay-2">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span style="color:var(--white);">Blog</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="contact-section" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Latest Articles</span>
+                <h2 class="section-title">News & Insights</h2>
+                <p class="section-desc">Stay updated with the latest trends in interior design and fenestration solutions.</p>
+            </div>
+
+            <div class="blog-grid">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-card fade-in delay-1">
+                    <div class="blog-image">
+                        <img src="assets/blog-upvc-vs-aluminium.jpg" alt="UPVC vs Aluminium">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Oct 15, 2025</span>
+                            <span><i class="fas fa-user"></i> Admin</span>
+                        </div>
+                        <h3 class="blog-title">UPVC vs Aluminium: Which is Better for Your Home?</h3>
+                        <p class="blog-excerpt">Choosing the right material for your windows and doors is crucial. We break down the pros and cons of UPVC and Aluminium to help you make an informed decision for your space.</p>
+                        <a href="blog-1.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card fade-in delay-2">
+                    <div class="blog-image">
+                        <img src="assets/blog-energy-efficient.jpg" alt="Energy Efficient Windows">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 02, 2025</span>
+                            <span><i class="fas fa-user"></i> Design Team</span>
+                        </div>
+                        <h3 class="blog-title">5 Ways Energy Efficient Windows Save You Money</h3>
+                        <p class="blog-excerpt">Did you know that up to 30% of your home's heating energy is lost through windows? Learn how upgrading to double-glazed UPVC windows can significantly lower your electricity bills.</p>
+                        <a href="blog-2.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card fade-in delay-3">
+                    <div class="blog-image">
+                        <img src="assets/blog-design-trends.jpg" alt="Modern Architecture Trends">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 18, 2025</span>
+                            <span><i class="fas fa-user"></i> Architecture</span>
+                        </div>
+                        <h3 class="blog-title">Top Window Design Trends for Modern Architecture</h3>
+                        <p class="blog-excerpt">From expansive slide-and-fold doors that blur the line between indoors and outdoors, to sleek minimalist aluminium frames, explore the top design trends of the year.</p>
+                        <a href="blog-3.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 4 -->
+                <article class="blog-card fade-in delay-1">
+                    <div class="blog-image">
+                        <img src="assets/blog-multipoint-locking.jpg" alt="Security Tips">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 05, 2025</span>
+                            <span><i class="fas fa-user"></i> Security Expert</span>
+                        </div>
+                        <h3 class="blog-title">Enhancing Home Security with Multi-Point Locking</h3>
+                        <p class="blog-excerpt">Your doors and windows are the primary entry points to your home. Discover how our multi-point locking systems provide unparalleled security without compromising on style.</p>
+                        <a href="blog-4.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 5 -->
+                <article class="blog-card fade-in delay-2">
+                    <div class="blog-image">
+                        <img src="assets/blog-maintaining-upvc.jpg" alt="Maintenance Guide">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 20, 2025</span>
+                            <span><i class="fas fa-user"></i> Maintenance</span>
+                        </div>
+                        <h3 class="blog-title">The Ultimate Guide to Maintaining UPVC Windows</h3>
+                        <p class="blog-excerpt">UPVC is famously low-maintenance, but a little care goes a long way. Follow these simple steps to keep your windows looking brand new and functioning perfectly for decades.</p>
+                        <a href="blog-5.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card fade-in delay-3">
+                    <div class="blog-image">
+                        <img src="assets/blog-soundproofing.jpg" alt="Acoustic Insulation">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 12, 2026</span>
+                            <span><i class="fas fa-user"></i> Comfort Team</span>
+                        </div>
+                        <h3 class="blog-title">Soundproofing Your Home: The Role of Quality Windows</h3>
+                        <p class="blog-excerpt">Living near a busy street? Learn how acoustic glazing and airtight UPVC profiles can drastically reduce noise pollution and create a peaceful indoor environment.</p>
+                        <a href="blog-6.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/logo.png" alt="U Design Window World Logo" class="footer-logo">
+                </a>
+                <p>Premium UPVC & Aluminium door and window solutions for modern homes and commercial spaces. Elevating aesthetics, maximizing durability.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/918630730545" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="upvc.html">UPVC Windows</a></li>
+                    <li><a href="upvc.html">UPVC Doors</a></li>
+                    <li><a href="aluminium.html">Aluminium Windows</a></li>
+                    <li><a href="aluminium.html">Aluminium Doors</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--accent);margin-right:8px;width:16px;"></i>Nagla Burja-Pushpanjali Road, Vrindavan, Mathura</li>
+                    <li><i class="fas fa-phone-alt" style="color:var(--accent);margin-right:8px;width:16px;"></i><a href="tel:+918630730545">+91 8630730545</a></li>
+                    <li><i class="fas fa-envelope" style="color:var(--accent);margin-right:8px;width:16px;"></i><a href="mailto:udesignwindowworld@gmail.com">udesignwindowworld@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 U Design Window World LLP. All Rights Reserved. | GSTIN: 09AAJFU1174A1ZC</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+

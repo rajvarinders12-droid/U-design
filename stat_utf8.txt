@@ -1,0 +1,46 @@
+﻿commit 9d30e8f229bc5a47e825b659910b513f7c04ee1d
+Author: rajvarinders12 <rajarinder1016@gmail.com>
+Date:   Tue Oct 6 23:14:52 2026 +0530
+
+    Update phone number globally to +91 8630730545
+
+ OneDrive/Desktop/U-design_world-main/about-us.jpg  |  Bin 0 -> 343091 bytes
+ .../U-design_world-main/alu-sliding-window.jpg     |  Bin 0 -> 500863 bytes
+ .../aluminium-casement-door.png                    |  Bin 0 -> 536243 bytes
+ .../aluminium-casement-window.png                  |  Bin 0 -> 1029424 bytes
+ .../U-design_world-main/aluminium-slide-fold.png   |  Bin 0 -> 1027673 bytes
+ .../U-design_world-main/aluminium-sliding-door.png |  Bin 0 -> 1007554 bytes
+ .../aluminium-sliding-window.jpg                   |  Bin 0 -> 309432 bytes
+ .../U-design_world-main/aluminium-ventilator.jpg   |  Bin 0 -> 261772 bytes
+ .../Desktop/U-design_world-main/aluminium.html     |  271 ++++
+ OneDrive/Desktop/U-design_world-main/blog-1.html   |   93 ++
+ OneDrive/Desktop/U-design_world-main/blog-2.html   |   97 ++
+ OneDrive/Desktop/U-design_world-main/blog-3.html   |   97 ++
+ OneDrive/Desktop/U-design_world-main/blog-4.html   |   91 ++
+ OneDrive/Desktop/U-design_world-main/blog-5.html   |   97 ++
+ OneDrive/Desktop/U-design_world-main/blog-6.html   |   93 ++
+ .../U-design_world-main/blog-design-trends.jpg     |  Bin 0 -> 316158 bytes
+ .../U-design_world-main/blog-energy-efficient.jpg  |  Bin 0 -> 295912 bytes
+ .../U-design_world-main/blog-maintaining-upvc.jpg  |  Bin 0 -> 298287 bytes
+ .../blog-multipoint-locking.jpg                    |  Bin 0 -> 251040 bytes
+ .../U-design_world-main/blog-soundproofing.jpg     |  Bin 0 -> 277837 bytes
+ .../U-design_world-main/blog-upvc-vs-aluminium.jpg |  Bin 0 -> 279166 bytes
+ OneDrive/Desktop/U-design_world-main/blog.html     |  350 +++++
+ .../Desktop/U-design_world-main/hero-banner.jpg    |  Bin 0 -> 937348 bytes
+ OneDrive/Desktop/U-design_world-main/index.html    |  443 ++++++
+ OneDrive/Desktop/U-design_world-main/logo.png      |  Bin 0 -> 84252 bytes
+ OneDrive/Desktop/U-design_world-main/script.js     |  214 +++
+ OneDrive/Desktop/U-design_world-main/styles.css    | 1501 ++++++++++++++++++++
+ .../U-design_world-main/upvc-casement-door.jpg     |  Bin 0 -> 442984 bytes
+ .../U-design_world-main/upvc-casement-door.png     |  Bin 0 -> 512558 bytes
+ .../U-design_world-main/upvc-casement-window.jpg   |  Bin 0 -> 370852 bytes
+ .../U-design_world-main/upvc-casement-window.png   |  Bin 0 -> 854010 bytes
+ .../U-design_world-main/upvc-slide-fold.png        |  Bin 0 -> 964210 bytes
+ .../U-design_world-main/upvc-sliding-door.jpg      |  Bin 0 -> 536817 bytes
+ .../U-design_world-main/upvc-sliding-door.png      |  Bin 0 -> 911089 bytes
+ .../U-design_world-main/upvc-sliding-window.jpg    |  Bin 0 -> 239434 bytes
+ .../U-design_world-main/upvc-sliding-window.png    |  Bin 0 -> 6963 bytes
+ .../U-design_world-main/upvc-ventilator.jpg        |  Bin 0 -> 159389 bytes
+ .../U-design_world-main/upvc-ventilator.png        |  Bin 0 -> 8373 bytes
+ OneDrive/Desktop/U-design_world-main/upvc.html     |  271 ++++
+ 39 files changed, 3618 insertions(+)
